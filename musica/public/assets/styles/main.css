@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap');
+
+:root {
+    --dashboard-background: #1D2123;
+    --font-quicksand: 'Quicksand';
+    --font-yellow: #FACD66;
+    --sidebar-dark-backcolor: #1A1E1F;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    /* -webkit-font-smoothing: antialiased; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: var(--gray-dark); */
+    background-color: var(--dashboard-background);
+    scroll-behavior: smooth;
+    font-family: var(--font-quicksand), sans-serif;
+}
+
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
