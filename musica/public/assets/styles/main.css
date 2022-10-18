@@ -5,6 +5,9 @@
     --font-quicksand: 'Quicksand';
     --font-yellow: #FACD66;
     --sidebar-dark-backcolor: #1A1E1F;
+    --aqua-blue: #609EAF;
+    --off-white: #EFEEE0;
+    --faint-text-color: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -16,7 +19,7 @@
     font-size: 16px;
     font-weight: 400;
     /* color: var(--gray-dark); */
-    background-color: var(--dashboard-background);
+    /* background-color: var(--dashboard-background); */
     scroll-behavior: smooth;
     font-family: var(--font-quicksand), sans-serif;
 }
@@ -27,4 +30,188 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.top-section-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: top;
+    width: 100%;
+}
+
+.hero-img-section {
+    flex-basis: 65%;
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    background-color: var(--aqua-blue);
+    background-image: url('../images/musica-hero-back.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    text-align: left;
+    padding: 5vh 3vw;
+}
+
+.hero-text-ctn {
+    background: none !important;
+    width: 45%;
+    color: #FFFFFF;
+}
+
+.curated {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+}
+
+.hero-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 120%;
+    margin: 10vh 0 1.5vh;
+}
+
+.avatars-div {
+    margin-top: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatars-ctn img{
+    margin-left: -0.7vw;
+}
+
+.avatars-div > span {
+    color: #ffffff;
+    margin: 0 0.5vw 0 1vw;
+}
+
+.avatars-div > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.top-charts-section {
+    padding: 0 0 0 1.5vw;
+    color: #ffffff;
+    width: 100%;
+    flex-basis: 40%;
+}
+
+.top-chart-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--off-white);
+}
+
+.charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 1.5vw 1.5vh 1vw;
+    width: 100%;
+    /* min-width: 20vw; */
+    background-color: var(--sidebar-dark-backcolor);
+    border-radius: 20px;
+    margin-top: 1.5vh;
+}
+
+.charts .chart-text-ctn {
+    /* margin: 0 7vw 0 1vw; */
+    margin-left: 1vw;
+}
+
+.chart-text-ctn .chart-song-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 120%;
+}
+
+.chart-text-ctn .chart-artiste, .chart-text-ctn .chart-duration {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+}
+
+.chart-artiste {
+    color: var(--faint-text-color);
+    margin: 0.8vh 0;
+}
+
+.dashboard-ctn {
+    width: 87vw;
+}
+
+.chart-fav-ctn {
+    margin-left: auto;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 50px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bottom-section-ctn {
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.slide-ctn {
+    margin-bottom: 6vh;
+}
+
+.sliding-tile-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.sliding-tile-ctn > div {
+    margin-right: 3vw;
+}
+
+.slide-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--off-white);
+    margin-bottom: 1.5vh;
+}
+
+.slide .slide-img-label, .slide .slide-artiste {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.slide .slide-artiste {
+    color: var(--faint-text-color);
 }

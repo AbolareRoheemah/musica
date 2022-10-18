@@ -19,7 +19,17 @@
     /* background-color: white; */
     background-color: var(--sidebar-dark-backcolor);
     border-radius: 50px;
-    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.set-ctn:first-child {
+    position: sticky;
+    top: 9vh;
+}
+
+.set-ctn:last-child {
+    position: sticky;
+    top: 40vh;
 }
 
 .set-ctn a, .set-ctn svg {

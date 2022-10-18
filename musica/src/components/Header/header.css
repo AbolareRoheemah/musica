@@ -6,6 +6,7 @@
     height: 9vh;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .logo-ctn {
@@ -46,10 +47,11 @@
 .search-ctn input.header-input{
     border: 0;
     padding: 0 0 0 5vw;
-    width: 100%;
+    width: 40%;
     height: inherit;
-    max-height: 8vh;
+    max-height: 5vh;
     color: #ffffff;
     border-radius: 50px;
-    outline-color: transparent;
+    background-color: transparent;
+    outline-color: var(--font-yellow);
 }
