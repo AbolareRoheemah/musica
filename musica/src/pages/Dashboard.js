@@ -1,6 +1,46 @@
 import React from 'react'
+import NewCharts from '../components/NewCharts'
+import Slide from '../components/Slide'
 
 export default function Dashboard() {
+    const slideInfo = [
+        {
+            image: 'slide1.png',
+            desc: 'Life in a bubble',
+            name: 'The van'
+        },
+        {
+            image: 'slide2.png',
+            desc: 'Mountain',
+            name: 'Krisk'
+        },
+        {
+            image: 'slide3.png',
+            desc: 'Limits',
+            name: 'John Dillion'
+        },
+        {
+            image: 'slide4.png',
+            desc: 'Everything\'s black',
+            name: 'Ahmeed'
+        },
+        {
+            image: 'slide5.png',
+            desc: 'Cancelled',
+            name: 'Eminem'
+        },
+        {
+            image: 'slide6.png',
+            desc: 'Nomad',
+            name: 'Makrat eli'
+        },
+        {
+            image: 'slide1.png',
+            desc: 'Blind',
+            name: 'Wiz Khalifa'
+        }
+    ]
+
   return (
     <div className='dashboard-ctn'>
         <div className="top-section-ctn">
@@ -25,171 +65,15 @@ export default function Dashboard() {
             <div className="top-charts-section">
                 <p className="top-chart-title">Top charts</p>
                 <div className="charts-ctn">
-                    <div className="charts">
-                        <div className="chart-img">
-                            <img src="../../assets/images/chart1.png" alt="" />
-                        </div>
-                        <div className="chart-text-ctn">
-                            <p className="chart-song-name">Golden age of 80s</p>
-                            <p className="chart-artiste">Sean Swadder</p>
-                            <p className="chart-duration">2:34:45</p>
-                        </div>
-                        <div className="chart-fav-ctn">
-                            <img src="../../assets/images/Heart.svg" alt="" />
-                        </div>
-                    </div>
-                    <div className="charts">
-                        <div className="chart-img">
-                            <img src="../../assets/images/chart2.png" alt="" />
-                        </div>
-                        <div className="chart-text-ctn">
-                            <p className="chart-song-name">Golden age of 80s</p>
-                            <p className="chart-artiste">Sean Swadder</p>
-                            <p className="chart-duration">2:34:45</p>
-                        </div>
-                        <div className="chart-fav-ctn">
-                            <img src="../../assets/images/Heart.svg" alt="" />
-                        </div>
-                    </div>
-                    <div className="charts">
-                        <div className="chart-img">
-                            <img src="../../assets/images/chart3.png" alt="" />
-                        </div>
-                        <div className="chart-text-ctn">
-                            <p className="chart-song-name">Golden age of 80s</p>
-                            <p className="chart-artiste">Sean Swadder</p>
-                            <p className="chart-duration">2:34:45</p>
-                        </div>
-                        <div className="chart-fav-ctn">
-                            <img src="../../assets/images/Heart.svg" alt="" />
-                        </div>
-                    </div>
+                    <NewCharts info={{image:'chart1.png', songName: 'Golden age of 80s', artiste: 'Sean Swadder', duration: '2:34:45'}} />
+                    <NewCharts info={{image:'chart2.png', songName: 'Golden age of 80s', artiste: 'Sean Swadder', duration: '2:34:45'}} />
+                    <NewCharts info={{image:'chart3.png', songName: 'Golden age of 80s', artiste: 'Sean Swadder', duration: '2:34:45'}} />
                 </div>
             </div>
         </div>
         <div className="bottom-section-ctn">
-            <div className="slide-ctn">
-                <p className="slide-title">New Releases.</p>
-                <div className="sliding-tile-ctn">
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide1.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Life in a bubble</p>
-                        <p className="slide-artiste">The van</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide2.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Mountain</p>
-                        <p className="slide-artiste">Krisk</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide3.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Limits</p>
-                        <p className="slide-artiste">John Dillion</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide4.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Everything's back</p>
-                        <p className="slide-artiste">Ameed</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide5.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Cancelled</p>
-                        <p className="slide-artiste">Eminem</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide6.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Nomad</p>
-                        <p className="slide-artiste">Makrol eli</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide1.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Life</p>
-                        <p className="slide-artiste">Van</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide2.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Bubble</p>
-                        <p className="slide-artiste">Thevan</p>
-                    </div>
-                </div>
-            </div>
-            <div className="slide-ctn">
-                <p className="slide-title">Popular in your area</p>
-                <div className="sliding-tile-ctn">
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide1.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Life in a bubble</p>
-                        <p className="slide-artiste">The van</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide2.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Mountain</p>
-                        <p className="slide-artiste">Krisk</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide3.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Limits</p>
-                        <p className="slide-artiste">John Dillion</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide4.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Everything's back</p>
-                        <p className="slide-artiste">Ameed</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide5.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Cancelled</p>
-                        <p className="slide-artiste">Eminem</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide6.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Nomad</p>
-                        <p className="slide-artiste">Makrol eli</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide1.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Life</p>
-                        <p className="slide-artiste">Van</p>
-                    </div>
-                    <div className="slide">
-                        <div className="slide-img">
-                            <img src="../../assets/images/slide2.png" alt="" />
-                        </div>
-                        <p className="slide-img-label">Bubble</p>
-                        <p className="slide-artiste">Thevan</p>
-                    </div>
-                </div>
-            </div>
+            <Slide title={'New Releases.'} info={slideInfo} />
+            <Slide title={'Popular in your area'} info={slideInfo} />
         </div>
     </div>
   )
