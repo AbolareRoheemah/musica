@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function NewCharts({info}) {
-    // const image = 'chart1.png'
+    const navigate = useNavigate()
 
   return (
-    <div className="charts">
+    <div className="charts" onClick={() => {navigate("/album")}}>
         <div className="chart-img">
             <img src={"../../assets/images/" + info.image} alt="" />
         </div>

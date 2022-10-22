@@ -34,6 +34,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: var(--dashboard-background);
 }
 
 .top-section-ctn {
@@ -130,6 +131,7 @@ body {
     background-color: var(--sidebar-dark-backcolor);
     border-radius: 20px;
     margin-top: 1.5vh;
+    cursor: pointer;
 }
 
 .charts .chart-text-ctn {
@@ -214,4 +216,15 @@ body {
 
 .slide .slide-artiste {
     color: var(--faint-text-color);
+}
+
+/* Album stytles */
+.album-ctn {
+    background-image: url('../images/Lead-image.png') linear-gradient(#1D2123, #4c4d4e);
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25;
 }

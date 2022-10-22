@@ -1,6 +1,6 @@
 import React from 'react'
 import NewCharts from '../components/NewCharts'
-import Slide from '../components/Slide'
+import Slide from '../components/Slide';
 
 export default function Dashboard() {
     const slideInfo = [

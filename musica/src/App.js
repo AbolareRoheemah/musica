@@ -6,6 +6,7 @@ import Profile from './pages/Profile';
 import Radio from './pages/Radio';
 import Video from './pages/Video';
 import Logout from './pages/Logout';
+import Album from './pages/Album';
 import Header from './components/Header'
 import Sidebar from './components/Sidebar/Index'
 import Footer from './components/Footer/Index'
@@ -26,6 +27,7 @@ function App() {
             <Route path='/radio' element={ <Radio /> } />
             <Route path='/video' element={ <Video /> } />
             <Route path='/logout' element={ <Logout /> } />
+            <Route path='/album' element={ <Album /> } />
           </Routes>
         </div>
       </div>

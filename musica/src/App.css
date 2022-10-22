@@ -1,11 +1,6 @@
 .app-ctn {
-  background-color: var(--dashboard-background);
   margin-bottom: 0;
   padding-bottom: 0;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100vh; */
 }
 
 .main-ctn {
