@@ -13,7 +13,7 @@ export default function Header() {
         </div>
         <div className="search-ctn">
             <div className="header-search-ctn">
-                <label for="search">
+                <label htmlFor="search">
                 <span className="material-icons-outlined">search</span>
                 </label>
                 <input

@@ -219,12 +219,104 @@ body {
 }
 
 /* Album stytles */
-.album-ctn {
+/* .album-ctn {
     background-image: url('../images/Lead-image.png') linear-gradient(#1D2123, #4c4d4e);
     background-size: cover;
     height: 100%;
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.25;
+} */
+.album-jumbotron {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 11vh;
+    margin-bottom: 5vh;
+    padding: 0 30vw 0 0;
+}
+
+.jumbotron-text-ctn {
+    margin-left: 2.5vw;
+    height: 100%;
+}
+
+.jumbotron-text-ctn p:not(.hero-text) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #EFEEE0;
+}
+
+.hero-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #A4C7C6;
+    /* margin-top: 0; */
+}
+
+.subhero {
+    margin-bottom: 2vh;
+}
+
+.album-actions-ctn, .action-ctn, .each-album > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.action-ctn {
+    width: auto;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(5px);
+    border-radius: 32px;
+    padding: 0 0.7vw;
+    margin: 5vh 0.8vw 3vh 0;
+}
+
+.action-ctn p {
+    margin-left: 0.8vw;
+}
+
+/* each album styles */
+.each-song-ctn {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.each-album-ctn {
+    width: 100%;
+    height: auto;
+    /* backdrop-filter: opacity(0.9); */
+}
+
+.each-album {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 9vh;
+    background: rgba(51, 55, 59, 0.37);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    padding: 0 1vw;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+}
+.fav-ctn {
+    margin-left: 1.7vw;
+}
+
+.expand-more span {
+    color: var(--font-yellow);
 }
