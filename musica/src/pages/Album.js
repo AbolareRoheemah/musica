@@ -6,7 +6,7 @@ export default function Album() {
     const albumInfo = [
         {
             image: 'each1.png',
-            fav: false,
+            fav: true,
             name: 'Let me love you',
             artiste: 'Krisx',
             single: 'Single',
