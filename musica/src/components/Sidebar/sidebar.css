@@ -40,7 +40,7 @@
 
 .set-ctn svg:hover path{
     fill: var(--font-yellow);
-    fillOpacity: 1;
+    fill-opacity: 1;
 }
 
 .set-ctn a {
@@ -58,12 +58,12 @@
 
 .is-active svg path{
     fill: var(--font-yellow);
-    fillOpacity: 1;
+    fill-opacity: 1;
 }
 
 .not-active svg path{
     fill: none;
-    fillOpacity: 0.25;
+    fill-opacity: 0.25;
 }
 
 .indicator-ctn {
